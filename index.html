@@ -2,37 +2,59 @@
 <html>
   <head>
     <title>Link in bio</title>
-    <link rel="stylesheet" href="index.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="bg-gray-300">
-    <header>
-      <img
-        class="h-10 w-10 content-center"
-        src="images/goku.jpg"
-        alt="Super Hero"
-      />
-      <img
-        class="h-15 w-15 rounded-full hover:animate-spin"
-        src="https://ui-avatars.com/api/?name=Joel+Casimiro"
-        alt="Initials JC"
-      />
-      <h1>@Cazzwamu</h1>
+  <body class="bg-red-300">
+    <header class="px-20 pt-20">
+      <nav class="flex h-8 items-center justify-center">
+        <img
+          class="h-44 w-44 rounded-full hover:animate-pulse"
+          src="images/goku.jpg"
+          alt="Super Hero"
+        />
+      </nav>
     </header>
 
-    <section>
-      <ul>
-        <li>
-          <a href="https://twitch.tv/wenquai"> Twitch </a>
-        </li>
-        <li>
-          <a href="https://instagram.com/wenquai"> Instagram </a>
-        </li>
-        <li>
-          <a href="https://twitter.com/wenquai"> Twitter </a>
-        </li>
-      </ul>
-    </section>
+    <main>
+      <div class="w-full block md:flex px-14 py-24 gap-x-80">
+        <div class="w-full md:w-1/2">
+          <img
+            class="h-15 w-15 rounded-full hover:animate-spin"
+            src="https://ui-avatars.com/api/?name=Joel+Casimiro"
+            alt="Initials JC"
+          />
+          <h1>@Cazzwamu</h1>
+        </div>
+        <div class="w-full md:w-1/2">
+          <ul class="space-y-20">
+            <li>
+              <a
+                href="https://twitch.tv/wenquai"
+                class="bg-orange-400 rounded-full h-3 py-8 px-20 flex-none justify-center hover:underline"
+              >
+                Twitch
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://instagram.com/wenquai"
+                class="bg-orange-400 rounded-full h-3 py-8 px-20 flex-none justify-center hover:underline"
+              >
+                Instagram
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://twitter.com/wenquai"
+                class="bg-orange-400 rounded-full h-3 py-8 px-20 flex-none justify-center hover:underline"
+              >
+                Twitter
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
